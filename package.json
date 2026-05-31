@@ -1,17 +1,26 @@
 {
-  "name": "shadowpath-server",
+  "name": "shadowpath-server-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Safe pedestrian routing engine background algorithm server",
+  "main": "server.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
-  "keywords": [],
+  "keywords": [
+    "shadowpath",
+    "routing",
+    "backend"
+  ],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
-    "cors": "^2.8.6",
-    "express": "^5.2.1"
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
